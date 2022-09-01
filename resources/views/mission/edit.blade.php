@@ -1,31 +1,27 @@
-<form style="width: 50%;margin:auto" method="post" action="{{ route('reservations.update', $reserv->id)}}">
+<form style="width: 50%;margin:auto" method="post" action="{{ route('missions.update', $mission->id)}}">
 <div class="form-groupe">
     @csrf
     @method('PATCH')
-    <label for="code">Matricule :</label>
-    <input type="text" class="form-control" name="matricule" value="{{$reserv->matricule}}"/>
+    <label for="code">intitule :</label>
+    <input type="text" class="form-control" name="intitule" value="{{$mission->intitule}}"/>
 </div>
 
 <div class="form-groupe">
-    <label for="code">Corps :</label>
-    <input type="text" class="form-control" name="corps" value="{{$reserv->corps}}"/>
+    <label for="code">lieu :</label>
+    <input type="text" class="form-control" name="lieu" value="{{$mission->lieu}}"/>
 </div>
 
 <div class="form-groupe">
-    <label for="code">Grade :</label>
-    <input type="text" class="form-control" name="grade" value="{{$reserv->grade}}"/>
+    <label for="code">duree :</label>
+    <input type="text" class="form-control" name="duree" value="{{$mission->duree}}"/>
 </div>
 <div class="form-groupe">
-    <label for="code">Nom :</label>
-    <input type="text" class="form-control" name="nom" value="{{$reserv->nom}}"/>
+    <label for="code">date depart :</label>
+    <input type="text" class="form-control" name="date" value="{{$mission->date}}"/>
 </div>
 
 <div class="form-groupe">
-    <label for="code">Prenom :</label>
-    <input type="text" class="form-control" name="prenom" value="{{$reserv->prenom}}"/>
+    <label for="code">date retour :</label>
+    <input type="text" class="form-control" name="date" value="{{$mission->date}}"/>
 </div>
 
-<div class="form-groupe">
-    <label for="code">telephone :</label>
-    <input type="text" class="form-control" name="sexe" value="{{$reserv->telephone}}"/>
-</div>

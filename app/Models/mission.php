@@ -8,20 +8,20 @@ use Illuminate\Database\Eloquent\Model;
 class mission extends Model
 {
     use HasFactory;
-
     protected $fillable = [
-        'matricule',
-        'corps',
-        'grade',
-        'nom',
-        'prenom',
-        'email',
-        'password',
-        'telephone',
-        'statut',
-        'userId',
+        'intitule',
+        'lieu',
+        'duree',
+        'date_depart',
+        'date_retour',
+        'unite',
+        'chefmission',
+        
     ];
-    public function users(){
-        return $this->belongsTo(User::class, 'userId');// belongsTo= appartenir à
+    public function chefunite(){
+        return $this->belongsTo(chef_unites::class, 'unite');// belongsTo= appartenir à
+    }
+    public function chefmission(){
+        return $this->belongsTo(chef_missions::class, 'chefmission');// belongsTo= appartenir à
     }
 }

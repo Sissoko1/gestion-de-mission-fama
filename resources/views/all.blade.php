@@ -114,13 +114,13 @@
                 
 
                 
-                  <li
+                   <!-- <li
                    >
                     <a class="sidenav-item-link" href="analytics.html">
                       <i class="mdi mdi-chart-line"></i>
                       <span class="nav-text">Analytics Dashboard</span>
                     </a>
-                  </li>
+                  </li> 
                 
 
                 
@@ -128,31 +128,31 @@
                 
                   <li class="section-title">
                     Apps
-                  </li>
+                  </li>  -->
                 
 
                 
 
                 
-                  <li
+                  <!-- <li
                    >
                     <a class="sidenav-item-link" href="chat.html">
                       <i class="mdi mdi-wechat"></i>
                       <span class="nav-text">Chat</span>
                     </a>
-                  </li>
+                  </li> -->
                 
 
                 
 
                 
-                  <li
+                  <!-- <li
                    >
                     <a class="sidenav-item-link" href="contacts.html">
                       <i class="mdi mdi-phone"></i>
                       <span class="nav-text">Contacts</span>
                     </a>
-                  </li>
+                  </li> -->
                 
 
                 
@@ -162,7 +162,7 @@
                    >
                     <a class="sidenav-item-link" href="team.html">
                       <i class="mdi mdi-account-group"></i>
-                      <span class="nav-text">chef de mission</span>
+                      <span class="nav-text">Missionnaire</span>
                     </a>
                   </li>
                 
@@ -182,7 +182,7 @@
                 
 
                 
-                  <li  class="has-sub" >
+                  <!-- <li  class="has-sub" >
                     <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#email"
                       aria-expanded="false" aria-controls="email">
                       <i class="mdi mdi-email"></i>
@@ -230,21 +230,21 @@
                         
                       </div>
                     </ul>
-                  </li>
+                  </li> -->
                 
 
                 
 
                 
-                  <li class="section-title">
+                  <!-- <li class="section-title">
                     UI Elements
-                  </li>
-                
+                  </li> -->
+                 
 
                 
 
-                
-                  <li  class="has-sub" >
+          
+                  <!-- <li  class="has-sub" >
                     <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#ui-elements"
                       aria-expanded="false" aria-controls="ui-elements">
                       <i class="mdi mdi-folder-outline"></i>
@@ -321,7 +321,7 @@
                               
                             </div>
                           </ul>
-                        </li>
+                        </li> 
                         
 
                         
@@ -610,13 +610,13 @@
                         
                       </div>
                     </ul>
-                  </li>
+                  </li> -->
                 
 
                 
 
                 
-                  <li  class="has-sub" >
+                  <!-- <li  class="has-sub" >
                     <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#charts"
                       aria-expanded="false" aria-controls="charts">
                       <i class="mdi mdi-chart-pie"></i>
@@ -643,10 +643,10 @@
                   </li>
                 
 
-                
+                 -->
 
                 
-                  <li class="section-title">
+                  <!-- <li class="section-title">
                     Pages
                   </li>
                 
@@ -751,7 +751,7 @@
                       </div>
                     </ul>
                   </li>
-                
+                 -->
 
                 
 
@@ -760,7 +760,7 @@
                     <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#authentication"
                       aria-expanded="false" aria-controls="authentication">
                       <i class="mdi mdi-account"></i>
-                      <span class="nav-text">Authentication</span> <b class="caret"></b>
+                      <span class="nav-text">Chef de mission</span> <b class="caret"></b>
                     </a>
                     <ul  class="collapse"  id="authentication"
                       data-parent="#sidebar-menu">
@@ -768,9 +768,9 @@
                         
                         
                           
-                            <li >
+                             <li >
                               <a class="sidenav-item-link" href="sign-in.html">
-                                <span class="nav-text">Sign In</span>
+                                <span class="nav-text">Militaires</span>
                                 
                               </a>
                             </li>
@@ -782,7 +782,7 @@
                           
                             <li >
                               <a class="sidenav-item-link" href="sign-up.html">
-                                <span class="nav-text">Sign Up</span>
+                                <span class="nav-text">Véhicules</span>
                                 
                               </a>
                             </li>
@@ -794,11 +794,11 @@
                           
                             <li >
                               <a class="sidenav-item-link" href="reset-password.html">
-                                <span class="nav-text">Reset Password</span>
+                                <span class="nav-text">Missons</span>
                                 
                               </a>
                             </li>
-                          
+                           
                         
 
                         
@@ -810,7 +810,7 @@
                 
 
                 
-                  <li  class="has-sub" >
+                  <!-- <li  class="has-sub" >
                     <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#other-page"
                       aria-expanded="false" aria-controls="other-page">
                       <i class="mdi mdi-file-multiple"></i>
@@ -871,12 +871,12 @@
                       </div>
                     </ul>
                   </li>
-                
+                 -->
 
                 
 
                 
-                  <li class="section-title">
+                  <!-- <li class="section-title">
                     Documentation
                   </li>
                 
@@ -938,7 +938,7 @@
                                 
                               </a>
                             </li>
-                          
+                           -->
                         
 
                         
@@ -981,7 +981,7 @@
                 <span class="sr-only">Toggle navigation</span>
               </button>
 
-              <span class="page-title">dashboard</span>
+              <span class="page-title">Page d'acceuil</span>
 
               <div class="navbar-right ">
 
@@ -1024,7 +1024,7 @@
                   <li class="custom-dropdown">
                     <button class="notify-toggler custom-dropdown-toggler">
                       <i class="mdi mdi-bell-outline icon"></i>
-                      <span class="badge badge-xs rounded-circle">21</span>
+                       <span class="badge badge-xs rounded-circle"></span> 
                     </button>
                     <div class="dropdown-notify">
 
@@ -1046,19 +1046,19 @@
 
                             <div class="media media-sm bg-warning-10 p-4 mb-0">
                               <div class="media-sm-wrapper">
-                                <a href="user-profile.html">
-                                  <img src="images/user/user-sm-02.jpg" alt="User Image">
-                                </a>
+                                 <a href="user-profile.html">
+                                  <img src="" alt="">
+                                </a> 
                               </div>
                               <div class="media-body">
                                 <a href="user-profile.html">
-                                  <span class="title mb-0">John Doe</span>
+                                   <span class="title mb-0"></span>
                                   <span class="discribe">Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible. Afraid at highly months do things on at.</span>
                                   <span class="time">
                                     <time>Just now</time>...
                                   </span>
                                 </a>
-                              </div>
+                              </div> 
                             </div>
 
                             <div class="media media-sm p-4 bg-light mb-0">
@@ -1179,7 +1179,7 @@
                               </div>
                               <div class="media-body">
                                 <a href="user-profile.html">
-                                  <span class="title mb-0">John Doe</span>
+                                  <span class="title mb-0"></span>
                                   <span class="discribe">Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible. Afraid
                                     at highly months do things on at.</span>
                                   <span class="time">
@@ -1279,8 +1279,8 @@
                   <!-- User Account -->
                   <li class="dropdown user-menu">
                     <button class="dropdown-toggle nav-link" data-toggle="dropdown">
-                      <img src="images/user/user-xs-01.jpg" class="user-image rounded-circle" alt="User Image" />
-                      <span class="d-none d-lg-inline-block">John Doe</span>
+                      <!-- <img src="images/user/user-xs-01.jpg" class="user-image rounded-circle" alt="User Image" /> -->
+                      <span class="d-none d-lg-inline-block"></span> 
                     </button>
                     <ul class="dropdown-menu dropdown-menu-right">
                       <li>

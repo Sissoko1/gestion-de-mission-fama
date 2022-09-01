@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\mission;
-use App\Models\unite;
+use App\Models\chefMission;
+use App\Models\chefUnite;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 
@@ -31,13 +31,13 @@ class HomeController extends Controller
         
         if($user->statut == 'chef unite')
         {
-            $unite = unite::where ('userId', $user->id)->first();
-            return view ('unite.dashboard',compact('unite'));
+            $unite = chefUnite::where ('userId', $user->id)->first();
+            return view ('utilisateur.dash',compact('unite'));
         }
 
         elseif($user->statut == 'chef de mission')
         {
-            $mission = mission::where ('userId', $user->id)->first();
+            $mission = chefMission::where ('userId', $user->id)->first();
 
             return view ('mission.dashboard',compact('mission'));
 

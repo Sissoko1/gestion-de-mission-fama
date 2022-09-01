@@ -1,6 +1,6 @@
-@extends('layouts.app')
+@extends('layouts.unite')
 
-@section('content')
+@section('contenu')
 @if(count($errors) > 0)
         <div class=" alert alert-danger">
             <ul>
@@ -11,23 +11,23 @@
             </ul>
         </div>
         @endif
-<div class="container">
+<div class="">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">{{ __('Enregistrez chef de mission') }}</div>
 
                 <div class="card-body">
-                    <form method="POST" action="{{ route('mission.register') }}">
+                    <form method="POST" action="{{ route('missions.create') }}">
                         @csrf
 
                         <div class="row mb-3">
-                            <label for="name" class="col-md-4 col-form-label text-md-end">{{ __('matricule') }}</label>
+                            <label for="name" class="col-md-4 col-form-label text-md-end">{{ __('Intitule') }}</label>
 
                             <div class="col-md-6">
-                                <input id="matricule" type="text" class="form-control @error('matricule') is-invalid @enderror" name="matricule" value="{{ old('matricule') }}" required autocomplete="matricule" autofocus>
+                                <input id="intitule" type="text" class="form-control @error('intitule') is-invalid @enderror" name="intitule" value="{{ old('matricule') }}" required autocomplete="matricule" autofocus>
 
-                                @error('matricule')
+                                @error('intitule')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
@@ -36,12 +36,12 @@
                         </div>
 
                         <div class="row mb-3">
-                            <label for="name" class="col-md-4 col-form-label text-md-end">{{ __('grade') }}</label>
+                            <label for="lieu" class="col-md-4 col-form-label text-md-end">{{ __('Lieu') }}</label>
 
                             <div class="col-md-6">
-                                <input id="grade" type="text" class="form-control @error('grade') is-invalid @enderror" name="grade" value="{{ old('grade') }}" required autocomplete="grade" autofocus>
+                                <input id="lieu" type="text" class="form-control @error('lieu') is-invalid @enderror" name="lieu" value="{{ old('lieu') }}" required autocomplete="grade" autofocus>
 
-                                @error('grade')
+                                @error('lieu')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
@@ -50,12 +50,12 @@
                         </div>
 
                         <div class="row mb-3">
-                            <label for="corps" class="col-md-4 col-form-label text-md-end">{{ __('corps') }}</label>
+                            <label for="duree" class="col-md-4 col-form-label text-md-end">{{ __('Duree') }}</label>
 
                             <div class="col-md-6">
-                                <input id="corps" type="text" class="form-control @error('corps') is-invalid @enderror" name="corps" value="{{ old('corps') }}" required autocomplete="corps" autofocus>
+                                <input id="duree" type="text" class="form-control @error('duree') is-invalid @enderror" name="duree" value="{{ old('corps') }}" required autocomplete="corps" autofocus>
 
-                                @error('corps')
+                                @error('duree')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
@@ -64,12 +64,12 @@
                         </div>
 
                         <div class="row mb-3">
-                            <label for="nom" class="col-md-4 col-form-label text-md-end">{{ __('nom') }}</label>
+                            <label for="date_depart" class="col-md-4 col-form-label text-md-end">{{ __('Date_depart') }}</label>
 
                             <div class="col-md-6">
-                                <input id="nom" type="text" class="form-control @error('nom') is-invalid @enderror" name="nom" value="{{ old('nom') }}" required autocomplete="nom" autofocus>
+                                <input id="date_depart" type="text" class="form-control @error('date_depart') is-invalid @enderror" name="date_depart" value="{{ old('date_depart') }}" required autocomplete="nom" autofocus>
 
-                                @error('nom')
+                                @error('date_depart')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
@@ -78,12 +78,12 @@
                         </div>
 
                         <div class="row mb-3">
-                            <label for="prenom" class="col-md-4 col-form-label text-md-end">{{ __('prenom') }}</label>
+                            <label for="date_retour" class="col-md-4 col-form-label text-md-end">{{ __('Date_retour') }}</label>
 
                             <div class="col-md-6">
-                                <input id="prenom" type="text" class="form-control @error('prenom') is-invalid @enderror" name="prenom" value="{{ old('prenom') }}" required autocomplete="prenom" autofocus>
+                                <input id="date_retour" type="text" class="form-control @error('date_retour') is-invalid @enderror" name="date_retour" value="{{ old('date_retour') }}" required autocomplete="prenom" autofocus>
 
-                                @error('prenom')
+                                @error('date_retour')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
@@ -95,7 +95,7 @@
                             <label for="telephone" class="col-md-4 col-form-label text-md-end">{{ __('telephone') }}</label>
 
                             <div class="col-md-6">
-                                <input id="telephone" type="text" class="form-control @error('telephone') is-invalid @enderror" name="telephone" value="{{ old('telephone') }}" required autocomplete="telephone" autofocus>
+                                <input id="telephone" type="number" class="form-control @error('telephone') is-invalid @enderror" name="telephone" value="{{ old('telephone') }}" required autocomplete="telephone" autofocus>
 
                                 @error('telephone')
                                     <span class="invalid-feedback" role="alert">
@@ -105,16 +105,25 @@
                             </div>
                         </div>
                         <div class="row mb-3">
-                            <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Email Address') }}</label>
+                            <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Chef mission') }}</label>
 
                             <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+                                <select name="chefmission" id="chefmission">
+                                    @foreach('chefmission as chefmission')
+                                    <option value="{{chefmission->id}}">{{chefmission->matricule}}</option>
+                                </select>
+                               
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Chef mission') }}</label>
 
-                                @error('email')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
+                            <div class="col-md-6">
+                                <select name="chefmission" id="chefmission">
+                                    @foreach('chefmission as chefmission')
+                                    <option value="{{chefmission->id}}">{{chefmission->matricule}}</option>
+                                </select>
+                               
                             </div>
                         </div>
 

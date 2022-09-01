@@ -11578,18 +11578,20 @@ button {
 
 /* Content */
 .content {
-  padding-top: 1rem;
-  padding-left: 1rem;
+  margin: auto;
+  margin-top: -25px;
+  /* padding-top: 1rem; */
+  /* padding-left: 1rem;
   padding-right: 1rem;
-  width: 100%;
+  width: 100%; */
 }
 @media (min-width: 992px) {
   .content {
-    margin-right: auto;
+    /* margin-right: auto;
     margin-left: auto;
     padding-top: 1.9rem;
     padding-left: 1.875rem;
-    padding-right: 1.875rem;
+    padding-right: 1.875rem; */
   }
 }
 @media (min-width: 1200px) {
